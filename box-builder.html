@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Build Your Own Fruit Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="header-center">
+        <a href="index.html" class="logo" aria-label="Go to homepage">
+          <img src="img/fruit-shop-logo.png" class="logo-img" alt="Fruit Shop Logo" />
+          <span class="products-text"> View Products </span>
+        </a>
+        <nav role="navigation" aria-label="Main navigation">
+          <a href="basket.html" class="basket-link" aria-label="View shopping basket">
+            <img src="img/basket-icon.png" class="basket-img" alt="Shopping basket icon" />
+            <span class="basket-text">View shopping basket</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" role="main">
+      <div class="content-box">
+        <h1>Build Your Own Seasonal Fruit Box</h1>
+        <div class="form-group">
+          <label for="boxSize">Choose box size</label>
+          <select id="boxSize">
+            <option value="S">Small (3)</option>
+            <option value="M">Medium (4-5)</option>
+            <option value="L">Large (6-8)</option>
+          </select>
+        </div>
+        <div id="productSelectors" class="form-group">
+          <!-- JS will render selectors for items -->
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox" id="allowSubs" /> Allow substitutions if out of stock</label>
+        </div>
+        <div class="form-group">
+          <label for="subscribeToggle"><input type="checkbox" id="subscribeToggle" /> Subscribe & Save 10%</label>
+        </div>
+        <div id="summary" class="form-group"></div>
+        <div class="button-container">
+          <button id="addBoxBtn">Add Box to Basket</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/timlolkema/" target="_blank" rel="noopener noreferrer">By Tim Lolkema</a>
+    </footer>
+    <script src="shop.js"></script>
+    <script src="box-builder.js"></script>
+  </body>
+</html>
