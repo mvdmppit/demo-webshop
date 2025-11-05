@@ -33,7 +33,7 @@ function addBundleToBasket(bundle) {
 }
 
 function computeBundlePrice(bundle) {
-  // simple price engine: sum prices * (1 - tier discount) * (1 - subscription discount)
+  // simple price engine: sum prices * (1 - tier discount) * (1 - subscription discount) test
   let subtotal = 0;
   if (bundle.items && bundle.items.length) {
     bundle.items.forEach((it) => {
